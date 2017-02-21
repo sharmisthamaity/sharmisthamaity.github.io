@@ -40,20 +40,28 @@
           <h2 class="sectionTitle">Projects</h2>
       </section>
       <div class="row">
-        <div class="projSection col-md-6">
+        <div class="projSection col-md-4">
+          <div class="description">
+            <h3 class="title projTitle">Conference App</h3>
+          </div>
+          <div class="projImage">
+            <img class="btn btn-primary btn-lg sectionImage" data-toggle="modal" data-target="#project3" src="images/esw_app_pictures/icon.png" alt="project3 image">
+          </div>
+        </div>
+        <div class="projSection col-md-4">
           <div class="description">
             <h3 class="title projTitle">Web Blog</h3>
           </div>
           <div class="projImage">
-            <img class="btn btn-primary btn-lg" data-toggle="modal" data-target="#project1" src="images/travelBlog.JPG" alt="project1 image">
+            <img class="btn btn-primary btn-lg wanderImage sectionImage" data-toggle="modal" data-target="#project1" src="images/travelBlog.JPG" alt="project1 image">
           </div>
         </div>
-        <div class="projSection col-md-6">
+        <div class="projSection col-md-4">
           <div class="description" id="des2">
             <h3 class="title projTitle">Android App</h3>
           </div>
           <div class="projImage">
-            <img class="btn btn-primary btn-lg projImage2" data-toggle="modal" data-target="#project2" src="images/mockupImage.JPG" alt="project2 image">
+            <img class="btn btn-primary btn-lg projImage2 sectionImage" data-toggle="modal" data-target="#project2" src="images/mockupImage.JPG" alt="project2 image">
           </div>
         </div>
       </div>
@@ -71,6 +79,9 @@
                           <img class="img-responsive modalImage" src="images/smlogo.png" alt="SM Logo Image">
                           <a class="projLink" href="http://ece-travel-blog.appspot.com/" target="_blank">Link to Project</a>
                           <p class="modalDes">For a school assignment, I created a web blog that allowed users to sign in and add their own post. Using Google App Engine, I incorporated the ability for users to sign in with their google account, and saved their posts with Objectify and Datastore. I used basic HTML and CSS for the design, and deployed the website onto Google App Engine using Eclipse.</p>
+                          <p class="modalDes">The theme of the blog followed travel posts, where users could share their experiences during their adventures. If they are not signed in with their google account, they can only read posts. The home page of the blog only shows the three latest posts, but a link on the bottom directs the user to another page to view all posts on the blog.</p>
+                          <p class="modalDes"> If the user chooses to add a post, the site directs them to sign in. Once signed in, the bottom of the page will include a text-input box for them to add a post. In addition to reading and adding posts, the user can also choose to subscribe to the blog, where they can receive a daily email containing the latest activity on the blog.</p>
+                          <p class="modalDes">Visit the blog <a href="http://ece-travel-blog.appspot.com/" target="_blank">here</a>
                       </div>
                       <div class="modal-footer">
                           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -99,5 +110,53 @@
                   </div>
               </div>
           </div>
+
+      <!-- Modal Project 3 -->
+          <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel3">ESW Conference App</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive modalImage" src="images/smlogo.png" alt="SM Logo Image">
+                        <p class="modalDes">Note: This is a project I am currently working on, and all information will be updated as progress is made.</p>
+                        <p class="modalDes">Engineers for a Sustainable World (<a href="https://www.eswusa.org/">ESW</a>) is a non-profit organization comprised of students, university faculty, and professionals who are dedicated to building a more sustainable world through various technical projects and outreach activities. Each year they hold a conference to bring together chapters from around the world. This year, the conference will be held in Austin TX and will consist of various events and keynote speakers. As a new feature, ESW hopes to include a mobile app that will allow attendees to stay organized and informed during the conference.</p>
+                        <p class="modalDes">As a member of the ESW chapter at The University of Texas in Austin, I have taken on the task to design and build this app for the conference to use. Because the event will be held in April 2017, the following descriptions and images will show my plan and current progress of the app.</p>
+                        <p class="modalDes">After sitting down with members of ESW headquarters, the following requirements were decided:
+                          <ul>
+                            <li>Users should see the schedule for the conference</li>
+                            <li>Users should see the different options for speakers to attend during each session</li>
+                            <li>Users should have access to a map of the area</li>
+                            <li>Users can view suggested activities and food for the Austin area</li>
+                            <li>The app should be available for both android and iOS</li>
+                          </ul>
+                        </p>
+                        <p class="modalDes">From these requirements, I created a preliminary design of the app that include four main pages: About Austin, Schedule, Sessions, and Map</p>
+                        <div class="row">
+                          <img class="mockupImage col-sm-6" src="images/esw_app_pictures/ESW App Design - 1.jpg" alt="mockup image">
+                          <img class="mockupImage col-sm-6" src="images/esw_app_pictures/ESW App Design - 2.jpg" alt="mockup image">
+                        </div>
+                        <div class="row">
+                          <img class="mockupImage col-sm-6" src="images/esw_app_pictures/ESW App Design - 3.jpg" alt="mockup image">
+                          <img class="mockupImage col-sm-6" src="images/esw_app_pictures/ESW App Design - 4.jpg" alt="mockup image">
+                        </div>
+                        <p class="modalDes">Since the app needed to be available for both android and iOS, I decided it would be easier if I could develop using HTML, CSS, and Javascript. <a href="https://buildfire.com/developers/">Buildfire</a>, a platform for building mobile apps, allows developers to build customized plugins and pages using web technologies, while they take care of sending the app to Apple and Google Play. This will allow me to concentrate on the user design and functionality of the app, while Buildfire can verify that our app will be properly published.</p>
+                        <p class="modalDes">Below are images of the schedule page of the app where users can view the events of the conference, and click each event to read more information. Everything below the Schedule header is developed with HTML, CSS, and Javascript, while the header and menu is part of Buildfire's platform.</p>
+                        <div class="row">
+                          <p class="col-sm-2"></p>
+                          <img class="mockupImage col-sm-4" src="images/esw_app_pictures/scheduleImage_01.png" alt="mockup image">
+                          <img class="mockupImage col-sm-4" src="images/esw_app_pictures/scheduleImage_02.png" alt="mockup image">
+                          <p class="col-sm-2"></p>
+                        </div>
+                        <p class="modalDes">Buildfire also includes a database to store user information and a global positioning system, that can be incorporated to improve our app's functionality with additional features. Future work will include devloping the remaining pages of the app and if time allows, using the datastore to allow the user to save events to their own schedule and using the GPS to give user's directions to specific events.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+
   </body>
 </html>

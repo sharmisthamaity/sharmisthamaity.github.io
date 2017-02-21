@@ -79,6 +79,10 @@ img {
   margin-right: auto;
   display: block;
 }
+
+.wanderImage {
+  padding-top: 35px;
+}
 .appImage {
   height: 250px;
   margin-left: auto;

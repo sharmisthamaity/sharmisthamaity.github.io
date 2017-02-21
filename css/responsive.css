@@ -14,6 +14,11 @@
 .sectionTitle {
   text-align: center;
 }
+.sectionImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .projSection {
   padding-bottom: 10px;
 }
